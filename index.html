@@ -12,21 +12,25 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <i class="fa-brands fa-instagram"></i>
-        <span>Instagram</span>
-      </a>
+      <div class="col">
 
-      <ul class="navbar-nav">
-        <li class="nav-item align-self-center">
-          <button type="button" class="btn btn-success btn-sm px-2" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            Create a new post
-          </button>
-        </li>
+        <div class="log-ig">
+          <a class="navbar-brand" href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
 
-        <div class="nav-item px-2">
-          <button type="button" class="btn btn-secondary dropdown-toggle align-self-center" data-bs-toggle="dropdown"
+      <div class="d-flex justify-content-end">
+
+        <button type="button" class="btn btn-success me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+
+
+        <div class="dropdown">
+          <button type="button" class="btn btn-secondary dropdown-toggle ms-2" data-bs-toggle="dropdown"
             aria-expanded="false">
             <i class="fas fa-cog"></i>
           </button>
@@ -40,8 +44,10 @@
             <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
           </ul>
         </div>
-      </ul>
+
+      </div>
     </div>
+
   </nav>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -85,12 +91,11 @@
   <div class="tab-content" id="pills-tabContent">
     <div id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
       class="tab-pane fade active col-sm-12 col-md-6 mx-auto" tabindex="0">
-      <div class="row">
-        <div class="col-8 mt-2">
-          <h4>My crasy dog Spark!</h4>
-        </div>
-        <div class="col-4 mt-3">
-          <div class="headr1-2" id="current_date">
+      <div class="row col-sm-12 p-2 mx-1">
+          <div class="col-8 mt-2">
+            <h4>My Crazy Dog Spark!</h4>
+          </div>
+          <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end" id="current_date">
             <script>
               date = new Date();
               month = date.getMonth() + 1;
@@ -98,37 +103,32 @@
               document.getElementById("current_date").innerHTML = month + "/" + day;
             </script>
           </div>
-        </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/id/237/800/500"></img>
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/id/237/800/500"></img>
         </div>
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
           <p>This is an example of a very good photo that you can post on Instagram</p>
         </div>
-        <div class="col-1 pr-0">
-          <i class="far fa-heart"></i>
-        </div>
-        <div class="col-10 pl-3">
+
+        <div class="comend-bar d-flex justify-content-between">
+          <i class="far fa-heart mt-2 me-2"></i>
           <input class="form-control form-control-sm" type="text" placeholder="Comments..." />
-        </div>
-        <div class="col-1 pl-0 pr-0">
-          <button class="btn btn-link pl-1 pr-0 pt-0" data-toggle="modal" data-target="#exampleModal">
+          <button class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fas fa-ellipsis-v"></i>
           </button>
         </div>
-        <div class="col-12" id="spacer">
-        </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Coffe time</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500/?blur"></img>
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500/?blur"></img>
         </div> <!-- image -->
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
@@ -147,15 +147,16 @@
         <div class="col-12" id="spacer">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Selfie</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500?grayscale"></img>
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500?grayscale"></img>
         </div>
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
@@ -174,15 +175,16 @@
         <div class="col-12" id="spacer">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Life</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500/?blur=3"></img>
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500/?blur=3"></img>
         </div>
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
@@ -201,15 +203,16 @@
         <div class="col-12" id="spacer">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Cosas que me gustan</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500?random=1"></img>
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500?random=1"></img>
         </div>
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
@@ -228,15 +231,16 @@
         <div class="col-12" id="spacer">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Un momento inovidable</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500?random=2">"></img>
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500?random=2"></img>
         </div>
         <div class="col-12 pt-2 pb-2"><strong>204 Likess</strong></div>
         <div class="col-12">
@@ -255,15 +259,16 @@
         <div class="col-12" id="spacer">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Un lindo lugar</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500?random=3">
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500?random=3">
         </div> <!-- image -->
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
@@ -282,15 +287,16 @@
         <div class="col-12" id="spacer">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Love it</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500?random=4">
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500?random=4">
         </div>
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
@@ -309,15 +315,16 @@
         <div class="col-12" id="spacer">
         </div>
       </div>
-      <div class="row">
+
+      <div class="row col-sm-12 p-2 mx-1">
         <div class="col-8 mt-2">
           <h4>Moments</h4>
         </div>
-        <div class="col-4 mt-3">
+        <div class="d-flex col-4 col-sm-12 mt-3 justify-content-end">
           <h6>04/24</h6>
         </div>
-        <div class="col-12 p-0">
-          <img src="https://picsum.photos/800/500?random=5">
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <img class="img-fluid" src="https://picsum.photos/800/500?random=5">
         </div>
         <div class="col-12 pt-2 pb-2"><strong>204 Likes</strong></div>
         <div class="col-12">
